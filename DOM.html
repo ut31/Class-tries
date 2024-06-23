@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="title">Hello World!</h1>
+
+<script>
+    var heading = document.getElementById("title");
+    heading.innerHTML = "Hello, Universe!";
+  </script>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="title">Hello World!</h1>
+<p class="subtitle">Hello, Aloha, Konichiwa, Salut, world!</p>
+---------------------
+<h2 id="title">Welcome back!</h2>
+<p class="subtitle">We're very happy you're back again!</p>
+
+<script>
+  var welcomeBackSubtitle = document.getElementsByClassName("subtitle")[1]; 
+  welcomeBackSubtitle.style.color = "red";
+</script>
+
+</body>
+</html>
+In this example, we use the getElementsByClassName() method to select all elements with the class name of "subtitle".
+ We then use array indexing of [1] to select the second element with that class name.
+
+We assign this element to the variable welcomeBackSubtitle, then we change the text color to red using the style.color 
+property of the welcomeBackSubtitle element. -->
+---------------------
+<!DOCTYPE html>
+<html>
+<body>
+
+<article id="news-article">
+  <h1 id="news-title">Breaking news!<h1>
+</article>
+
+<script>
+  var newElement = document.createElement("p");
+  var textNode = document.createTextNode("This is a new paragraph talking about the news.");
+  newElement.appendChild(textNode);
+  var article = document.getElementById("news-article");
+  article.appendChild(newElement);
+</script>
+
+<div id="myDiv">
+    <p>This is a paragraph.</p>
+  </div>
+  
+  <script>
+    var div = document.getElementById("myDiv");
+    var p = div.getElementsByTagName("p")[0];
+    div.removeChild(p);
+  </script>
+
+</body>
+</html>
